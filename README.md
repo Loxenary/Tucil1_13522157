@@ -1,8 +1,10 @@
-# Project Name
+# Cyberpunk 2077 Breaching Protocol Solving Algorithm
 > Tucil 1 Stiima, Cyberpunk 2077 Breaching Protocol Solving Algorithm
-<img src="src/screenshot/Input.png" alt="Home Screen" width="200" />
+<img src="src/screenshot/Input.png" alt="Home Screen" width="300"/>
+
 > Program untuk menjalankan simulasi minigame pada game Cyberpunk 2077 bernama Breaching Protocol Solving Algorithm yang bertujuan melatih penggunaan Brute Force Algorithm dalam pemecahan suatu permasalahan
-> <img src="src/screenshot/Result.png" alt="Home Screen" width="200" />
+
+> <img src="src/screenshot/Result.png" alt="Home Screen" width="300" />
 
 # Table Of Contents
 * [General Inforamation About The Program](#Information)

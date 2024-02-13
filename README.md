@@ -1,8 +1,8 @@
 # Project Name
 > Tucil 1 Stiima, Cyberpunk 2077 Breaching Protocol Solving Algorithm
-<img src="img/Home.png" alt="Home Screen" width="400" />
+<img src="src/screenshot/Input.png" alt="Home Screen" width="200" />
 > Program untuk menjalankan simulasi minigame pada game Cyberpunk 2077 bernama Breaching Protocol Solving Algorithm yang bertujuan melatih penggunaan Brute Force Algorithm dalam pemecahan suatu permasalahan
-> <img src="img/Home.png" alt="Home Screen" width="400" />
+> <img src="src/screenshot/Result.png" alt="Home Screen" width="200" />
 
 # Table Of Contents
 * [General Inforamation About The Program](#Information)
@@ -20,8 +20,8 @@
 
 ## How To Use
 - there are 2 ways to run the program. each have their own
-- to run the GUI, run on GUI.py, make sure to install all the needed dependecies like tkinter, messagebox, etc
-- to run the CLI version, run on main.py
+- to run the GUI, run on GUI.py, make sure to install all the needed dependecies. to make sure, try pip install requirement.txt on the src directory to install all my installed package
+- to run the CLI version, run python on main.py
 ## Features
 - Input using txt file for CLI
 - Input using directly input on the CLI to get all the data randomly

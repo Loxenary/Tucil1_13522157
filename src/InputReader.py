@@ -27,26 +27,28 @@ def readTxtFile(): # Input From FileText
     file.close() # Free File 
     return buffer_size, matrix, sequences, sequence_rewards
 
-def readDirectInput(): # Input From CLI or GUI 
-    def createRandomMatrix(tokens, width, height): # tokens are unique_tokens from input
+def createRandomMatrix(tokens, width, height): # tokens are unique_tokens from input
         random_tokens = [random.choice(tokens) for _ in range(width * height)] # Create Random Tokens from given unique tokens to fill all the matrix cells
 
         matrix = [[random_tokens.pop(0) for _ in range(height)] for _ in range(width)]  # Create Random matrix from random_tokens element
 
         return matrix
 
-    def createRandomSequences(tokens, number_of_sequences, max_sequence_token): 
+def createRandomSequences(tokens, number_of_sequences, max_sequence_token): 
 
-        # assumption: max_sequence_token > 2
-        sequence_reward = [random.randint(0,100) for i in range(number_of_sequences)] # assumption sequence_reward is up to me, the maker :)
-        
-        sequences = []
-        for _ in range(number_of_sequences):
-            random_amount = random.randint(2,max_sequence_token)
-            random_sequence = [random.choice(tokens) for i in range(random_amount)]
-            sequences.append(random_sequence)
+    # assumption: max_sequence_token > 2
+    sequence_reward = [random.randint(0,100) for i in range(number_of_sequences)] # assumption sequence_reward is up to me, the maker :)
+    
+    sequences = []
+    for _ in range(number_of_sequences):
+        random_amount = random.randint(2,max_sequence_token)
+        random_sequence = [random.choice(tokens) for i in range(random_amount)]
+        sequences.append(random_sequence)
 
-        return sequences, sequence_reward # sequences and sequence_reward not become one to make it easier to manipulate later
+    return sequences, sequence_reward # sequences and sequence_reward not become one to make it easier to manipulate later
+
+def readDirectInput(): # Input From CLI or GUI 
+    
 
     unique_token = int(input("Input Unique amount of Token: ")) # amount of unique token
     input_token = input("Input Your Token: \n") # the unique token

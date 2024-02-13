@@ -5,8 +5,6 @@ import FileWriter
 
 buffer_size,matrix, sequences, sequence_reward = InputReader.inputDecision()
 
-
-
 next_token = CombinationGenerator.get_all_possible_next_tokens(sequences)
 
 combination_token, reward, timer, coordinate = CombinationGenerator.start_calculation(matrix,buffer_size, next_token, sequences, sequence_reward)

@@ -34,3 +34,6 @@ def rewrite_Txt(rewards, optimal_tokens, optimal_path, time_execution, message):
     except FileNotFoundError:
         print("File Not Found")
         rewrite_Txt(rewards,optimal_tokens, optimal_path, time_execution, "Please Input Ulang path anda: ")
+    except PermissionError:
+        print("Wrong Directory !!!")
+        rewrite_Txt(rewards,optimal_tokens, optimal_path, time_execution, "Please Input Ulang path anda: ")
